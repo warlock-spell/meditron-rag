@@ -10,13 +10,15 @@ client = QdrantClient(
     url=url, prefer_grpc=False
 )
 
+print("client: ")
 print(client)
-print("##############")
+print("------------------------------------")
 
 db = Qdrant(client=client, embeddings=embeddings, collection_name="vector_db")
 
+print("database: ")
 print(db)
-print("######")
+print("------------------------------------")
 query = "What is Sulfonylureas?"
 
 docs = db.similarity_search_with_score(query=query, k=2)
