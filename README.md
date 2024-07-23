@@ -7,7 +7,7 @@ Medical RAG QA App using Meditron 7B LLM, Qdrant Vector Database, and PubMedBERT
 
 2. Make sure that venv is activated properly, then run `pip install -r requirements.txt`. This will install all the dependencies.
 
-3. Once this is done, now download the LLM file from this link [https://huggingface.co/TheBloke/meditron-7B-GGUF/resolve/main/meditron-7b.Q4_K_M.gguf?download=true](https://huggingface.co/TheBloke/meditron-7B-GGUF/resolve/main/meditron-7b.Q4_K_M.gguf?download=true). Once the model is downloaded, place it in same folder.
+3. Once this is done, now download the LLM file from this link [model](https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.2-GGUF/resolve/main/mistral-7b-instruct-v0.2.Q5_K_M.gguf?download=true). Once the model is downloaded, place it in same folder.
 
 4. Download Docker, install it, it is very large and computationally intensive software, make sure to close all extra things, no background apps should be running while downloading and using docker. Restart after installing docker.
 
@@ -25,6 +25,6 @@ Medical RAG QA App using Meditron 7B LLM, Qdrant Vector Database, and PubMedBERT
 
 11. Then in the VS Code terminal, run `python retriever.py`. You will see the similar vectors to our Question which is hardcoded in the retriever.py file. Open the file to see the question, and in the terminal you will see the similar vectors from our pdf.
 
-12. Then finally, run `uvicorn rag:app`.
+12. Then finally, run `uvicorn main:app`.
 
 

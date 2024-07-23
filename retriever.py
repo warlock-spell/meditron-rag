@@ -17,7 +17,7 @@ db = Qdrant(client=client, embeddings=embeddings, collection_name="vector_db")
 
 print(db)
 print("######")
-query = "What is ABCs of Diabetes?"
+query = "What is Sulfonylureas?"
 
 docs = db.similarity_search_with_score(query=query, k=2)
 for i in docs:
