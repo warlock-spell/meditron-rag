@@ -6,8 +6,6 @@ from langchain.document_loaders import DirectoryLoader
 from langchain.document_loaders import PyPDFLoader
 from langchain.vectorstores import Qdrant
 
-#embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
-# Equivalent to SentenceTransformerEmbeddings(model_name="all-MiniLM-L6-v2")
 
 embeddings = SentenceTransformerEmbeddings(model_name="NeuML/pubmedbert-base-embeddings")
 
@@ -28,4 +26,4 @@ qdrant = Qdrant.from_documents(
     collection_name="vector_db"
 )
 
-print("Vector DB Successfully Created!")
+print("Vector DB Successfully Created for the given data files.!")

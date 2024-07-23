@@ -10,6 +10,7 @@ client = QdrantClient(
     url=url, prefer_grpc=False
 )
 
+print("Testing retrieval")
 print("client: ")
 print(client)
 print("------------------------------------")
